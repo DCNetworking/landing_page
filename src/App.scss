@@ -6,7 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -34,5 +36,30 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.full_size{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  height:100vh;
+}
+.navbar_czbk--container__show{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 9rem;
+  width: 100vw;
+}
+.navbar_czbk--items{
+  display: flex;
+  gap:2rem;
+  margin-left: auto;
+  margin-right:5rem;
+  a{
+    text-decoration: none;
+    color: rgb(18, 23, 54);
   }
 }
